@@ -200,9 +200,9 @@ while True:
             #y, x = loc_accept[0][0], loc_accept[1][0]
             for i in range(10):
                 print("Found!")
-            #win32api.SetCursorPos((x + AcceptGame.shape[1] // 2, y + AcceptGame.shape[0] // 2))
-            #win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0)
-            #win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
+            win32api.SetCursorPos((x + AcceptGame.shape[1] // 2, y + AcceptGame.shape[0] // 2))
+            win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0)
+            win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
             time.sleep(2)
             break
         time.sleep(5)
